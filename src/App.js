@@ -15,18 +15,19 @@ function App() {
         <h4>ReactBlog</h4>
       </div>
 
-      <button onClick={()=>{
-        let copy = [...글제목];
-        글제목변경(copy.sort());
+      <button 
+        onClick={()=>{
+          let copy = [...글제목];
+          글제목변경(copy.sort());
       }}>가나다순 정렬</button>
 
       <button 
         onClick={()=>{
-        // 글제목[0] = '여자 코트 추천';
-        // 글제목변경(글제목); -> array나 obj는 초기화값을 보존하자
-        let copy = [...글제목];
-        copy[0] = '여자 코트 추천'
-        글제목변경(copy);
+          // 글제목[0] = '여자 코트 추천';
+          // 글제목변경(글제목); -> array나 obj는 초기화값을 보존하자
+          let copy = [...글제목];
+          copy[0] = '여자 코트 추천'
+          글제목변경(copy);
       }}>버튼</button>
 
       <div className="list">
