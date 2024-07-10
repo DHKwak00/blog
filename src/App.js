@@ -34,8 +34,6 @@ function App() {
         <h4>{ 글제목[0] } <span onClick={()=>{ 따봉변경(따봉 + 1) }}>👍</span> {따봉} </h4>
         <p>7월 7일 발행</p>
       </div>
-
-
       <div className="list">
         <h4>{ 글제목[1] }</h4>
         <p>7월 8일 발행</p>
@@ -44,8 +42,21 @@ function App() {
         <h4>{ 글제목[2] }</h4>
         <p>7월 9일 발행</p>
       </div>
+
+      <Modal />
+
     </div>
   ); //end return
+}
+
+function Modal() { // function 변수명이 대문자? => 컴포넌트
+  return (
+    <div className="modal">
+      <h4>제목</h4>
+      <p>날짜</p>
+      <p>상세 내용</p>
+    </div>
+  )
 }
 
 export default App;
